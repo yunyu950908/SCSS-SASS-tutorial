@@ -27,6 +27,7 @@ sh ./build.sh
 - [function](./input/function.scss)
 
 ## 4.配合博客食用更佳
+[SCSS 入门指南-Albert](https://yunyu950908.github.io/2017/08/21/SCSS-%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/)
 
 ## Links
 
