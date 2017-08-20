@@ -1,0 +1,99 @@
+/* Sass 支持所有 CSS3 的 @ 规则， 以及一些 Sass 专属的规则*/
+/*@ 规则和指令*/
+/*@import
+ *Sass 扩展了 CSS 的 @import 规则，让它能够引入 SCSS 和 Sass 文件
+ */
+@import "test.css";
+@import "1.basic"; //.scss .sass
+
+/*嵌套 @import*/
+
+.example {
+  @import "1.basic";
+}
+
+/*@media 指令在sass中的作用与其在CSS中的作用相同*/
+
+.father {
+  .sidebar {
+    width: 300px;
+    @media screen and (orientation: landscape) {
+      width: 500px;
+      .hello {
+        font-size: 20px
+      }
+    }
+  }
+}
+
+/* @extend 使一个选择器继承于另一个选择器样式*/
+
+.error {
+  border: 1px #f00;
+  &.intrusion {
+    background-image: url("/image/hacked.png");
+  }
+  &:hover {
+    color: #00b88d;
+  }
+}
+
+.extendError {
+  @extend .error;
+}
+
+/* 继承复合选择器*/
+
+.div1.div2 {
+  text-decoration: underline;
+}
+
+.div3:hover {
+  text-decoration: overline;
+}
+
+.extend1 {
+  @extend .div1.div2;
+}
+
+.extend2 {
+  @extend .div3:hover
+}
+
+/* 继承多个选择器 */
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+
+.attention {
+  font-size: 3em;
+  background-color: #ff0;
+}
+
+.seriousError {
+  @extend .error;
+  @extend .attention;
+  border-width: 3px;
+}
+
+/* 连续继承 */
+
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+
+.seriousError {
+  @extend .error;
+  border-width: 3px;
+}
+
+.criticalError {
+  @extend .seriousError;
+  position: fixed;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+}

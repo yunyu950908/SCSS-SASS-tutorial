@@ -1,0 +1,50 @@
+/* 基本规则*/
+
+/* 嵌套规则 */
+
+#a {
+  .a-1 {
+    background: yellow;
+    .child {
+      font-size: 12px;
+      .child-1 {
+        color: red
+      }
+    }
+  }
+}
+
+/*引用父选择符：&*/
+
+// & 在编译时将被替换为父选择符，输出到 CSS 中
+
+.hello {
+  .dropdown {
+    display: none;
+  }
+  &:hover {
+    .dropdown {
+      display: block;
+    }
+  }
+}
+
+/* 嵌套属性 */
+.funky {
+  font: {
+    family: fantasy;
+    size: 30em;
+    weight: bold;
+  }
+  border: {
+    radius: 20px;
+    color: red;
+  }
+}
+
+//注释规则  Comments: /* */ and //
+
+/*标准的CSS注释*/
+//单行注释
+/*!重要注释*/
+

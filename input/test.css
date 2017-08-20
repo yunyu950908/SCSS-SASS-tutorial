@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+#test {
+    background: yellow;
+}
+
+#test .child {
+    font-size: 12px;
+}
+

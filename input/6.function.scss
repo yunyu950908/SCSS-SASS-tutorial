@@ -1,0 +1,34 @@
+/*
+ * 自定义函数指令
+ */
+
+$grid-width: 40px;
+$gutter-width: 10px;
+
+@function test($a) {
+  @return $a + 10;
+}
+
+@function grid-width($n) {
+  $hello: 1px;
+  @for $i from 1 through $n {
+    $hello: $hello + $i;
+  }
+  @if $hello > 10 {
+    $hello: 15px;
+  }
+  @return $hello + test(2);
+}
+
+#sidebar {
+  width: grid-width(5);
+}
+
+@mixin left($value: 10px) {
+  float: left;
+  margin-right: $value;
+}
+
+p {
+  @include left;
+}

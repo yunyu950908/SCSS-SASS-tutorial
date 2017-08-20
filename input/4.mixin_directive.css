@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*
+ * Mixin 指令
+ */
+/* @mixin 预先定义一份样式 */
+/* @include 引入一个预先定义的 @mixin 样式 */
+.page-title {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff0000;
+  padding: 4px;
+  margin-top: 10px; }
+
+/* 选择器 + 样式 */
+a {
+  color: blue;
+  background-color: red; }
+
+/* 复合混入 */
+.test {
+  background-color: #fc0;
+  font-size: 20px; }
+
+/* 传入参数 Arguments */
+p {
+  border-color: blue;
+  border-width: 10px;
+  border-style: dashed; }
+
+/*指定参数的缺省值*/
+p {
+  float: left;
+  margin-right: 10px; }
+
+/* 传入多个不固定的参数 */
+.shadows {
+  -moz-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  -webkit-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  box-shadow: 0px 4px 5px #666, 2px 6px 10px #999; }
+
+/*# sourceMappingURL=4.mixin_directive.css.mapap */
