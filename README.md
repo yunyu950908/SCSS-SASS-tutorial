@@ -14,17 +14,17 @@ sh ./build.sh
 
 ## 3.对照观察以下文件转化输出的CSS
 
-- [basic](./input/basic.scss)
+- [basic](./input/1.basic.scss)
 
-- [static_directive](./input/static_directive.scss)
+- [static_directive](./input/2.static_directive.scss)
 
-- [calculate](./input/calculate.scss)
+- [calculate](./input/3.calculate.scss)
 
-- [mixin_directive](./input/mixin_directive.scss)
+- [mixin_directive](./input/4.mixin_directive.scss)
 
-- [control_directive](./input/control_directive.scss)
+- [control_directive](./input/5.control_directive.scss)
 
-- [function](./input/function.scss)
+- [function](./input/6.function.scss)
 
 ## 4.配合博客食用更佳
 [SCSS 入门指南-Albert](https://yunyu950908.github.io/2017/08/21/SCSS-%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/)
