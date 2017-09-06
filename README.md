@@ -16,9 +16,9 @@ sh ./build.sh
 
 - [basic](./input/1.basic.scss)
 
-- [static_directive](./input/2.static_directive.scss)
+- [calculate](./input/2.calculate.scss)
 
-- [calculate](./input/3.calculate.scss)
+- [static_directive](./input/3.static_directive.scss)
 
 - [mixin_directive](./input/4.mixin_directive.scss)
 
